@@ -3,11 +3,16 @@
 # -*- coding: utf-8 -*-
 
 import requests
-import os, sys
+import os
 from time import time as timer
 from bs4 import BeautifulSoup
 from multiprocessing.dummy import Pool as ThreadPool
 
+# import for "'ascii' codec can't decode byte" error
+import sys
+reload(sys)
+sys.setdefaultencoding("utf-8")
+# import for "'ascii' codec can't decode byte" error
 
 def linkCrawler(url):
     print "[+] Crawling started."
