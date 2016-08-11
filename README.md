@@ -1,6 +1,7 @@
 # Black Hat brifiengs document downloader script
 
 This script used for Blackhat meterials download. Give Blackhat brifieng main url as parameter and sit back.
+Its multiprocessing (Thread pool), on defult work with 8 process
 
 # Usage
 ````
